@@ -1,0 +1,71 @@
+.footer{
+  @include clearfix;
+  height: 192px;
+  padding-top: 40px;
+  border-top: 4px solid #ff4e50;
+  .footer__textlogo{
+    display: block;
+    //margin-top: 40px;
+    width: 145px;
+    float: left;
+    color: $red;
+    font-size: $fs-lg;
+    font-weight: 600;
+  }
+  .footer__company{
+    display: block;
+    margin-left: 23px;
+    float: left;
+    width: 200px;
+    .footer__menu{
+      display: block;
+      width: 130px;
+      margin: 0 auto;
+      margin-top: 12px;
+      .footer__menu--item{
+        display: block;
+        margin-left: 31px;
+        margin-top: 5px;
+        a{
+          display: block;
+          margin-bottom: 10px;
+          color: $gray;
+          font-family: $font-family-p;
+          font-weight: 300;
+          &:hover{
+            color: $red;
+          }
+        }
+      }
+    }
+    .footer__company-link{
+      text-align: center;
+      display: block;
+      //margin: 40px 0 15px;
+      color: $gray-d;
+      font-weight: 600;
+    }
+  }
+  .footer__partner-link{
+    display: inline-block;
+    text-align: center;
+    float: left;
+    width: 61px;
+    //margin: 40px 0 0 20px;
+    margin-left: 20px;
+    color: $gray-d;
+    font-weight: 600;
+  }
+  .footer__created-block{
+    float: right;
+    display: block;
+    .footer__created-span{
+      float: right;
+      display: block;
+      margin-top: -20px;
+      color: #ccc;
+      font-size: $fs-xxs;
+      letter-spacing: $ls-xl;
+    }
+  }
+}

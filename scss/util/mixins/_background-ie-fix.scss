@@ -1,0 +1,6 @@
+// background-size: cover for IE < 10
+
+@mixin background-size-ie-fix {
+  filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(sizingMethod='scale');
+  -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(sizingMethod='scale')";
+}

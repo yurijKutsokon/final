@@ -1,0 +1,82 @@
+.searching{
+  @include clearfix;
+  text-align: center;
+  .searching__answer{
+    display: block;
+    margin-top: 35px;
+    //font-style: $font-family-p;
+    p{
+      color: $gray-dk;
+      font-weight: 100;
+      font-size: $fs-title-sm;
+
+    }
+  }
+  .searching__form{
+    max-width: 940px;
+    height: 158px;
+    margin: 20px auto;
+    .searching__form--input{
+      margin: 20px 0 10px;
+      width: 240px;
+      height: 40px;
+      padding-left: 25px;
+      border-radius: 4px;
+      border: 1px solid $gray-l;
+      background: $white;
+      font-family: $font-family-p;
+      }
+    .searching__form--submit{
+      width: 160px;
+      height: 40px;
+      border-radius: 25px;
+      background-color: #ff4e50;
+      color: #fff;
+      border: none;
+    }
+  }
+
+
+
+  .grid {
+    position: relative;
+    margin: 0 auto;
+    width: 100%;
+
+  }
+
+  .grid:after {
+    content: '';
+    display: block;
+  }
+
+  /* ---- grid-item ---- */
+
+  .grid-item {
+    //position: relative;
+    display: block;
+    float: left;
+    width: 31%;
+    min-height: 308px;
+    margin: 1% 1%;
+    border-radius: 4px;
+    background-size: cover;
+    div{//позиционирование надписи внутри блока
+      display: block;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%,-50%);
+      h3{
+        color: $white;
+        text-align: center;
+      }
+    }
+
+  }
+
+  .grid-item--width2 {
+    width: 64%;
+    //min-width: 236px;
+  }
+}

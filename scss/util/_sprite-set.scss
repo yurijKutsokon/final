@@ -1,0 +1,20 @@
+
+$sprites: sprite-map("#{$icons}/*.png", $spacing: 5px);
+$sprites-retina: sprite-map("#{$icons}-2x/*.png", $spacing: 10px);
+
+// Hardcoded size of 1x spritesheet
+$sprite-width: 600px;
+$sprite-height: auto;
+
+@mixin icon($name) {
+  width: image-width(sprite-file($sprites, $name));
+  height: image-height(sprite-file($sprites, $name));
+  background-repeat: no-repeat;
+  background-color: transparent;
+  background-position: sprite-position($sprites, $name);
+  background-image: sprite-url($sprites);
+  @media (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 3/2), (min-device-pixel-ratio: 2) {
+    background-size: $sprite-width $sprite-height;
+    background-image: sprite-url($sprites-retina);
+  }
+}

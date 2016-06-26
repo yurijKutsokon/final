@@ -1,0 +1,150 @@
+
+.slider{
+  max-width: 300px;
+  max-height: 403px;
+  margin: 35px 5px 0;
+  display: inline-block;
+  float: left;
+  position: relative;
+  overflow: hidden;
+
+  #top-slider, #left-slider, #right-slider{
+    border-radius: $round-sm;
+    position: relative;
+    overflow: hidden;
+    .owl-carousel {
+      width: 3215%;
+      position: relative;
+      .owl-item {
+        img {
+          padding-left: 10px;
+          display: block;
+          width: 98%;
+          height: auto;
+          max-width: 100%;
+          border-radius: $round-sm;
+        }
+      }
+      .owl-stage-outer {
+        border-radius: $round-sm;
+      }
+    }
+    .owl-controls {
+      position: relative;
+      top: -245px;
+      min-height: 55px;
+      .owl-nav {
+        position: absolute;
+        left: 25px;
+        .owl-prev{
+          width: 30px;
+          left: 6px;
+          height: 55px;
+          background: url("/images/prev.png");
+          position: absolute;
+        }
+        .owl-next{
+          position: absolute;
+          width: 30px;
+          left: 230px;
+          height: 55px;
+          background: url("/images/next.png");
+        }
+      }
+    }
+  }
+  .inscription{
+    position: absolute;
+    padding: 20px;
+    bottom: 0;
+    width: 270px;
+    min-height: 160px;
+    left: 10px;
+    .content-steps__btn{
+      //margin: 10px ;
+      padding: 0 12px;
+      width: 70px;
+      top: -15px;
+      background-color: $red;
+      border-radius: 16px;
+      position: absolute;
+      z-index: 999;
+      a{
+        color: $white;
+        font-family: $font-family-span;
+        text-transform: uppercase;
+        letter-spacing: $ls-xl;
+        font-size: $fs-xxs;
+      }
+    }
+    .content-steps__h2{
+      position: absolute;
+      color: $white;
+      //margin: 20px 0;
+      font-size: $fs-title-md;
+      z-index: 999;
+    }
+    .content-steps__p{
+      position: absolute;
+      z-index: 999;
+      top: 90px;
+      color: $gray-l;
+      letter-spacing: -0.07em;
+    }
+  }
+}
+
+
+
+//
+//    //.owl-dots {
+//    //  position: absolute;
+//    //  top: -30px;
+//    //  width: 100%;
+//    //  text-align: center;
+//    //  .owl-dot {
+//    //    display: inline-block;
+//    //    width: 10px;
+//    //    height: 10px;
+//    //    border-radius: 50%;
+//    //    background: $black;
+//    //    box-shadow: 0 0 6px 0 $white;
+//    //    margin: 0 3px;
+//    //    @include opacity(0.6);
+//    //    &.active {
+//    //      border: $border-black;
+//    //      width: 9px;
+//    //      height: 9px;
+//    //      @include opacity(0.9);
+//    //    }
+//    //  }
+//    //}
+
+//.inscription{
+//  position: absolute;
+//  padding: 20px;
+//  bottom: 0;
+//  width: 270px;
+//  min-height: 160px;
+//  left: 10px;
+//  .content-steps__btn{
+//    font-size: $fs-xxs;
+//    //margin: 10px ;
+//    text-transform: uppercase;
+//    letter-spacing: $ls-xl;
+//    background-color: $red;
+//    border-radius: 16px;
+//    a{
+//      font-family: $font-family-span;
+//    }
+//  }
+//  .content-steps__h2{
+//    margin: 20px 0;
+//    font-size: $fs-title-md;
+//    color: $white;
+//  }
+//  .content-steps__p{
+//    color: $gray-l;
+//    letter-spacing: -0.07em;
+//  }
+//}

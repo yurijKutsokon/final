@@ -1,0 +1,52 @@
+$opacity-dkr: 0.85;
+$opacity-dk: 0.7;
+$opacity-md: 0.5;
+$opacity-lt: 0.2;
+$opacity-ltr: 0.15;
+$transparent: rgba(255,255,255,0);
+
+// Semitransparent white
+$trBlack-dkr: rgba(0, 0, 0, $opacity-dkr);
+$trBlack-dk: rgba(0, 0, 0, $opacity-dk);
+$trBlack: rgba(0, 0, 0, $opacity-md);
+$trBlack-lt: rgba(0, 0, 0, $opacity-lt);
+$trBlack-ltr: rgba(0, 0, 0, $opacity-ltr);
+
+// Semitransparent black
+$trWhite-dkr: rgba(255, 255, 255, $opacity-dkr);
+$trWhite-dk: rgba(255, 255, 255, $opacity-dk);
+$trWhite: rgba(255, 255, 255, $opacity-md);
+$trWhite-lt: rgba(255, 255, 255, $opacity-lt);
+$trWhite-ltr: rgba(255, 255, 255, $opacity-ltr);
+
+// Brand colors
+$white: #fff;
+$black: #000;
+
+// Background colors
+$bg-gray-lt: #f8f8f8;
+$bg-orange-dk: #ff8920;
+$bg-orange-lt: #ffa200;
+
+// Font colors
+$red: #ff4e50;
+$gray-d: #333;
+$gray: #666;
+$gray-dk: #7d7d7d;
+$gray-l: #ccc;
+$gray-m: #a8a8a8;
+// Special colors
+//$dots: #ff9b11;
+//$warning-r: rgba(209, 0, 0, .5);
+
+// Shadow colors
+//$shadow-input-bg: inset 1px 1px 3px rgba(0, 0, 0, 0.35);
+//$shadow-bg: 0 0 3px rgba(0, 0, 0, 0.35);
+//$shadow-bg-form: 0 15px 10px rgba(0, 0, 0, 0.3);
+
+// Gradient colors
+//$orange-st: #ff8210;
+//$orange-end: #ffdec0;
+//$gray-ld: #e6e6e6;
+//$gray-lt: #f5fafb;
+

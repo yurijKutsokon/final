@@ -1,0 +1,65 @@
+
+header{
+  @include clearfix;
+  color: $white;
+  .bg-header{
+    min-height: 700px;
+    padding-top: $margin*2.5;
+    background: url("/images/bg-header.jpg") no-repeat;
+    background-position: center;
+    //background-size: cover;
+    text-align: center;
+    .top-text{
+      min-height: 20px;
+      h4{
+        font-size: 20px;
+        float: left;
+        letter-spacing: $ls-md;
+      }
+      .header-wrapper__login-sing-up{
+        display: block;
+        float: right;
+        span{
+          padding: 7px 16px;
+          margin: 0 auto;
+          &:hover{
+            border: $border-white;
+            border-radius: $round-lg;
+          }
+          a:hover{
+              @include opacity(0.5);
+          }
+        }
+      }
+    }
+    .title{
+      text-align: center;
+      //display: table-cell;
+      //vertical-align: middle;
+      h1{
+        //font-weight: 700;
+        margin: 0 auto;
+        margin-top: 148px;
+        display: block;
+        width: 55%;
+        line-height: 62px;
+        font-size: $fs-title-l;
+        letter-spacing: $ls-lg;
+        //padding-right: 3px;
+      }
+      p{
+        margin: $margin 0;
+        font-size: $fs-title-md;
+        line-height: $lh-lg;
+        font-family: $roboto;
+        font-weight: 100;
+      }
+      form{
+        margin: 32px auto 0;
+
+        //max-width: 230px;
+        //width: 100%;
+      }
+    }
+  }
+}

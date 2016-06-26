@@ -1,0 +1,22 @@
+@mixin gradient-v($startColor, $endColor) {
+    background-color: $startColor;
+    background-image: linear-gradient(to top, $startColor, $endColor);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#{$startColor}', endColorStr='#{$endColor}');
+}
+
+@mixin gradient-bottom($startColor, $endColor) {
+  background-color: $startColor;
+  background-image: linear-gradient(to bottom, $startColor, $endColor);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#{$startColor}', endColorStr='#{$endColor}');
+}
+
+@mixin gradient-h($startColor, $endColor) {
+  background-image: linear-gradient(to left, $startColor, $endColor);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#{$startColor}', endColorStr='#{$endColor}', gradientType='1');
+}
+
+// TODO: add description for startPos, endPos
+@mixin gradient-radial($startColor, $startPos, $endColor, $endPos) {
+  background: radial-gradient(ellipse at center, $startColor $startPos, $endColor $endPos);
+}
+

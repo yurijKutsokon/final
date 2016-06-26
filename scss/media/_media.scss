@@ -1,0 +1,109 @@
+@media all and (max-width: 991px){
+
+  //.content-partners {
+  //  text-align: center;
+  //}
+
+  header .bg-header .title h1{
+      width: 65%;
+      font-weight: 400;
+    }
+  .slider{
+    .owl-carousel {
+      width: 236px;
+      height: 403px;
+      img{
+        height: 403px;
+      }
+    }
+    #top-slider, #left-slider, #right-slider{
+
+      .owl-controls{
+        top: -363px;
+        .owl-nav{
+          left: 20px;
+          .owl-prev{
+            left: 0;
+          }
+          .owl-next{
+            left: 166px;
+          }
+        }
+      }
+      .inscription{
+        width: 210px;
+        left: 0;
+      }
+    }
+  }
+  .content-partners{
+    text-align: center;
+    .wrapper-partners{
+      width: 492px;
+
+    }
+  }
+  footer{
+    .footer__textlogo{
+      margin-left: 30px;
+    }
+  }
+}
+@media all and (max-width: 767px){
+  body{
+    margin: 0 auto;
+
+  }
+  header .bg-header{
+    padding-top: $margin*1.5;
+    .top-text{
+      .header-wrapper__login-sing-up{
+        float: none;
+      }
+      h4{
+        margin-top: 120px;
+        float: none;
+      }
+    }
+    .title h1{
+      font-size: 30px;
+      font-weight: 600;
+      margin-top: 40px;
+      width: 65%;
+      line-height: 45px;
+    }
+  }
+  .content .container-user-login{
+    height: 740px;
+    float: none;
+    .slider{
+      display: block;
+      float: none;
+      width: 300px;
+      height: 240px;
+      margin: 10px auto;
+      .owl-carousel {
+        width: 300px;
+        height: 240px;
+        img{
+          height: 240px;
+        }
+      }
+    }
+  }
+  .content-partners{
+    text-align: center;
+    .wrapper-partners{
+      width: 280px;
+
+    }
+  }
+  footer .footer__textlogo {
+
+    text-align: center;
+    float: none;
+    margin: 0 auto;
+  }
+}
+
+

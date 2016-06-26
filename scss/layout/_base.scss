@@ -1,0 +1,94 @@
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6,
+pre, form, fieldset, input, textarea, p, blockquote, th, td {
+  padding: 0;
+  margin: 0;
+}
+fieldset, img {
+  border: 0;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+ol, ul {
+  list-style: none;
+}
+address, caption, cite, code, dfn, em, strong, th, var, section {
+  font-weight: normal;
+  font-style: normal;
+  display: block;
+}
+caption, th {
+  text-align: left;
+}
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 600;
+  font-size: 100%;
+}
+span{
+  border: $border-tr-m;
+}
+a{
+
+  color: $white;
+  text-decoration: none;
+}
+h1, h4{
+  text-transform: uppercase;
+}
+h3 {
+  font-size: 22px;
+  color: $gray-d;
+  //font-weight: 100;
+}
+button{
+  font-family:$font-family-base;
+  font-weight: 600;
+}
+p{
+  font-family: $font-family-p;
+}
+q:before, q:after {
+  content: '';
+}
+abbr, acronym {
+  border: 0;
+}
+* {
+  outline: none;
+}
+html{
+  font-size: $fs-base;
+  height: 100%;
+}
+body{
+  font-family: $font-family-base;
+  height: 100%;
+  background-color: $white;
+}
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+img{
+  display: block;
+  max-width: 100%;
+}
+@include padding(left, none);
+@include padding(right, none);
+//#top-slider, .auth-form {
+//  min-height: 400px;
+//}
+//
+//.slider {
+//  border-radius: $round-l-tb;
+//  img {
+//    border-radius: inherit;
+//  }
+//}
+
+//.auth-form {
+//  border-radius: $round-r-tb;
+//}
+

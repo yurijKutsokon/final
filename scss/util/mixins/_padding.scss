@@ -1,0 +1,29 @@
+
+//@include padding(left, none);
+
+@mixin padding($side, $size) {
+  $padding-size : 0;
+  @if $size == 'xs' { $padding-size : 5px; }
+  @else if $size == 's' { $padding-size : 10px; }
+  @else if $size == 'm' { $padding-size : 15px; }
+  @else if $size == 'l' { $padding-size : 20px; }
+  @else if $size == 'xl' { $padding-size : 30px; }
+
+  @if $side == 'all' {
+    .padding-#{$size} {
+      padding: $padding-size !important;
+    }
+  } @else {
+    .padding-#{$side}-#{$size} {
+      padding-#{$side}: $padding-size !important;
+    }
+  }
+}
+
+//$sides-list: all top right bottom left;
+//$sizes-list: none xs s m l;
+//@each $current-side in $sides-list {
+//  @each $current-size in $sizes-list {
+//    @include padding($current-side,$current-size);
+//  }
+//}

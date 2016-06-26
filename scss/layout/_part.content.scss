@@ -1,0 +1,19 @@
+.content {
+  @include clearfix;
+  .container-user-login{
+    max-width: 940px;
+    height: 558px;
+    margin: 0 auto;
+    border-radius: $round-sm;
+
+  }
+  //content: '';
+  //overflow: hidden;
+}
+h3 {
+  text-align: center;
+  margin: $margin-l*2 0 $margin-m;
+  font-size: $fs-title;
+  letter-spacing: $ls-m;
+  //font-weight: 600;
+}

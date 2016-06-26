@@ -1,0 +1,233 @@
+//.auth-form {
+//  @include clearfix;
+//  font-size: $fs-title-sm;
+//  color: $gray;
+//  @include before-absolute {
+//    border-left: $border-gray-lt;
+//    min-height: 467px;
+//  }
+//  h2 {
+//    color: $orange-dk;
+//    font-size: 44px;
+//    margin-left: 25px;
+//    padding-top: $margin-md;
+//    font-weight: 300;
+//  }
+//}
+//form{
+//  @include clearfix;
+//  max-width: 420px;
+//  width: 100%;
+//  margin: $margin-md 0 0 25px;
+//}
+//.form-group{
+//  @include clearfix;
+//  margin-bottom: $margin-md;
+//  .title, .user-choice, .search, .container-fields {
+//    float: left;
+//  }
+//  .title, .search {
+//    line-height: $lh-lg-x;
+//  }
+//  p.title{
+//    width: 50px;
+//  }
+//  .container-fields {
+//    margin-left: 50px;
+//    max-width: 320px;
+//    width: 100%;
+//    position: relative;
+//  }
+//  .message {
+//    position: relative;
+//    &.error, &.success {
+//      position: absolute;
+//    }
+//    &.error {
+//      @include icon(error);
+//      right: -25px;
+//      top: 10px;
+//    }
+//    &.success {
+//      @include icon(success);
+//      right: -32px;
+//      top: 5px;
+//
+//    }
+//    .tooltips {
+//      position: absolute;
+//      background: rgba($black, 0.8);
+//      margin: -38.5px 0 0 6px;
+//      text-align: center;
+//      width: 175px;
+//      height: 77px;
+//      line-height: 77px;
+//      color: $white;
+//      left: 100%;
+//      top: 50%;
+//      border-radius: $round-xs;
+//      font-size: $fs-lg;
+//      @include after-absolute {
+//        top: 50%;
+//        right: 100%;
+//        margin-top: -8px;
+//        width: 0;
+//        height: 0;
+//        border-right: $border-black-bold;
+//        border-top: $border-tr-bold;
+//        border-bottom: $border-tr-bold;
+//      }
+//    }
+//  }
+//  .search{
+//    @include padding-h(15px);
+//    p {
+//      position: relative;
+//      padding-left: $margin;
+//      @include before-absolute {
+//        @include icon(search);
+//        left: 0;
+//        top: 10px;
+//      }
+//    }
+//  }
+//  .looking-choice{
+//    float: right;
+//  }
+//}
+//label{
+//  font-size: 0;
+//  input[type="radio"] {
+//    display: none;
+//    + span {
+//      float: left;
+//      width: 46px;
+//      height: $height-input;
+//      cursor: pointer;
+//    }
+//
+//    &.female {
+//      + span {
+//        background: url("/images/sex.png") left top no-repeat;
+//      }
+//      &:checked + span {
+//        background-position: left bottom;
+//      }
+//    }
+//    &.male {
+//      + span {
+//        background: url("/images/sex.png") right bottom no-repeat;
+//      }
+//      &:checked + span {
+//        background-position: right top;
+//      }
+//    }
+//    &.cool {
+//      + span {
+//        @include icon(check-na);
+//      }
+//      &:checked + span {
+//        @include icon(check-a);
+//      }
+//    }
+//    &.good {
+//        + span {
+//          @include icon(check-na);
+//        }
+//        &:checked + span {
+//          @include icon(check-a);
+//        }
+//    }
+//    &.tee {
+//      + span {
+//        @include icon(radio-na);
+//      }
+//      &:checked + span {
+//        @include icon(radio-a);
+//      }
+//    }
+//    &.beer {
+//      + span {
+//        @include icon(radio-na);
+//      }
+//      &:checked + span {
+//        @include icon(radio-a);
+//      }
+//    }
+//  }
+//}
+//input[type="text"] {
+//  width: 100%;
+//  text-indent: 20px;
+//  &.warning {
+//    border: $border-warning;
+//  }
+//}
+//input[type="text"], select {
+//  -webkit-appearance: none;
+//  @include reset-appearance;
+//  font-family: $source-sans-pro;
+//  font-size: $fs-title-sm;
+//  color: $gray;
+//  height: $height-input;
+//  border: 0;
+//  line-height: $lh-lg-x;
+//  border-radius: $round-lg;
+//  box-shadow: $shadow-input-bg;
+//  @include gradient-bottom($gray-ld, $gray-lt);
+//  outline: none;
+//}
+//.container-fields {
+//  select {
+//    padding: 0 40px 0 17px;
+//    @include icon(select-arrow);
+//    //top: 10px;
+//    //background: url("/images/icons/select-arrow.png") no-repeat;
+//    background-position: 100% -143px;
+//    outline: none;
+//    cursor: pointer;
+//    font-weight: 300;
+//    &[name="day"] {
+//      width: 81px;
+//    }
+//    &[name="month"] {
+//      width: 116px;
+//    }
+//    &[name="year"] {
+//      width: 103px;
+//    }
+//    &[name="city"] {
+//      width: 100%;
+//    }
+//    &[name="day"], &[name="month"] {
+//      margin-right: 10px;
+//    }
+//  }
+//}
+//.container-radio {
+//  @include clearfix;
+//  max-width: 320px;
+//  width: 100%;
+//  float: right;
+//  .wrap-square, .wrap-circle {
+//    float: left;
+//  }
+//  label {
+//    font-size: $fs-title-sm;
+//    float: left;
+//    line-height: $lh-sm;
+//    clear: both;
+//    margin-right: 65px;
+//    input[type="radio"] {
+//      + span {
+//        margin: 0 10px 10px 0;
+//      }
+//    }
+//  }
+//}
+//.container-button{
+//    float: right;
+//    max-width: 320px;
+//    width: 100%;
+//    margin-top: $margin-sm;
+//}
